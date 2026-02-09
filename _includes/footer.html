@@ -1,0 +1,53 @@
+<footer class="text-white py-12" style="background-color: #253941;">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <!-- Logo and tagline -->
+      <div class="md:col-span-2">
+        <div class="flex flex-col mb-4">
+          <div class="text-2xl leading-none mb-2 logo-text">
+            <span class="font-black italic" style="color: white; font-stretch: 62.5%;">komm</span><span class="font-black italic" style="color: #ff0400; font-stretch: 62.5%;">mit</span>
+          </div>
+          <div class="text-xs tracking-wider uppercase" style="color: #999999; font-weight: 500;">Prien am Chiemsee</div>
+        </div>
+        <p class="max-w-md" style="color: #999999;">
+          Bürgerinitiative in Prien am Chiemsee.
+          Brücke zwischen Gemeinderat und Bürgern.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="font-bold text-lg mb-4">Navigation</h4>
+        <ul class="space-y-2">
+          {% for item in site.data.navigation %}
+          <li><a href="{{ item.url }}" class="hover:text-white transition" style="color: #999999;">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-bold text-lg mb-4">Kontakt</h4>
+        <ul class="space-y-2" style="color: #999999;">
+          <li class="flex items-center">
+            <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+            <a href="mailto:kontakt@kommmit-prien.de" class="hover:text-white transition">kontakt@kommmit-prien.de</a>
+          </li>
+          <li class="flex items-center">
+            <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
+            <span>Prien am Chiemsee</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t pt-8 flex flex-col md:flex-row justify-between items-center text-sm" style="border-color: #3D5A5B; color: #999999;">
+      <p>&copy; 2026 KommMit Prien. Alle Rechte vorbehalten.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="{{ '/datenschutz.html' | relative_url }}" class="hover:text-white transition">Datenschutz</a>
+        <a href="{{ '/impressum.html' | relative_url }}" class="hover:text-white transition">Impressum</a>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,13 +1,12 @@
 # Site settings
-title: Kommitprien
-email: blasco.miguel@gmail.com
-description: >-
-  A GitHub Pages site powered by Jekyll
-baseurl: "/kommitprien"
-url: "https://mblascoespar.github.io"
+title: "KommMit Prien"
+email: kontakt@kommmit-prien.de
+description: "Bürgerinitiative am Chiemsee"
+baseurl: ""
+url: ""
 
 # Build settings
-theme: minima
+markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

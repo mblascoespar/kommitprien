@@ -1,0 +1,8 @@
+- name: Über uns
+  url: "#ueber-uns"
+- name: Veranstaltungen
+  url: "#veranstaltungen"
+- name: Themen
+  url: "#themen"
+- name: Mitmachen
+  url: "#mitmachen"

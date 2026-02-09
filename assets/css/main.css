@@ -1,0 +1,75 @@
+/* KommMit Prien - Custom Styles */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font families */
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 900;
+}
+
+/* Utility classes for logo */
+.font-black {
+  font-weight: 900;
+}
+
+/* Additional custom styles as needed */
+.container {
+  max-width: 1280px;
+}
+
+/* Ensure proper spacing for fixed header */
+main {
+  position: relative;
+}
+
+/* Icon sizing consistency */
+[data-lucide] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Prose styling for legal pages */
+.prose {
+  color: #4B5563;
+  line-height: 1.75;
+}
+
+.prose strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.prose a {
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card hover effects */
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Ensure decorative shapes don't interfere with content */
+.pointer-events-none {
+  pointer-events: none;
+}

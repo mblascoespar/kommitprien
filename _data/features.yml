@@ -1,0 +1,12 @@
+- icon: users
+  title: Parteiübergreifend
+  description: Wir bringen Menschen aller politischen Richtungen zusammen.
+  color: teal
+- icon: message-circle
+  title: Transparent
+  description: Offener Dialog zwischen Gemeinderat und Bürgern.
+  color: teal
+- icon: target
+  title: Lösungsorientiert
+  description: Konkrete Ergebnisse für unsere Gemeinde.
+  color: red
