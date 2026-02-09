@@ -11,6 +11,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Collections
+collections:
+  events:
+    output: false
+    sort_by: date
+
 # Exclude from processing
 exclude:
   - .sass-cache/

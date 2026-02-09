@@ -2,20 +2,19 @@
   <div class="container mx-auto px-4">
     <div class="max-w-4xl">
       <h1 class="text-5xl md:text-7xl font-black mb-6">
-        <span class="text-primary">Politik mitgestalten.</span><br>
-        <span class="text-body">Gemeinsam anpacken.</span>
+        <span class="text-primary">{{ page.hero.headline_primary }}</span><br>
+        <span class="text-body">{{ page.hero.headline_secondary }}</span>
       </h1>
       <p class="text-xl md:text-2xl mb-8 max-w-2xl text-body">
-        KommMit Prien ist die Brücke zwischen Gemeinderat und Bürgern.
-        Wir bringen Menschen zusammen, um Prien am Chiemsee aktiv mitzugestalten.
+        {{ page.hero.description }}
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
         <a href="#veranstaltungen" class="btn-primary">
-          Veranstaltungen
+          {{ page.hero.cta_primary }}
           <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
         </a>
         <a href="#ueber-uns" class="btn-secondary">
-          Mehr erfahren
+          {{ page.hero.cta_secondary }}
         </a>
       </div>
     </div>
