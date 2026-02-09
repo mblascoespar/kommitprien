@@ -6,7 +6,10 @@ _site/
 .bundle/
 vendor/
 .claude/
+
+# IDE files
 .idea/
+*.iml
 
 # macOS metadata files
 **/.DS_Store
