@@ -7,3 +7,9 @@ _site/
 vendor/
 .claude/
 .idea/
+
+# Design source files (keep only web-optimized versions in assets/)
+design/**/*.ai
+design/**/*.eps
+design/**/*.pdf
+design/.DS_Store

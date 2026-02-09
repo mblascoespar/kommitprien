@@ -1,8 +1,8 @@
-<section id="themen" class="py-20" style="background-color: #f9fafb;">
+<section id="themen" class="section bg-gray-light">
   <div class="container mx-auto px-4">
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-black mb-4" style="color: #253941;">Unsere Themen</h2>
-      <p class="text-xl max-w-3xl mx-auto" style="color: #666666;">
+      <h2 class="section-title">Unsere Themen</h2>
+      <p class="section-description">
         Diese Bereiche liegen uns besonders am Herzen.
         Gemeinsam wollen wir konkrete Lösungen entwickeln.
       </p>
@@ -10,12 +10,12 @@
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {% for topic in site.data.topics %}
-      <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition text-center">
-        <div class="flex items-center justify-center w-16 h-16 rounded-full mx-auto mb-6" style="background-color: #0F766E;">
+      <div class="card p-8 text-center">
+        <div class="icon-circle icon-circle-teal">
           <i data-lucide="{{ topic.icon }}" class="w-8 h-8 text-white"></i>
         </div>
-        <h3 class="text-xl font-bold mb-3" style="color: #253941;">{{ topic.title }}</h3>
-        <p style="color: #666666;">{{ topic.description }}</p>
+        <h3 class="text-xl font-bold mb-3 text-primary">{{ topic.title }}</h3>
+        <p class="text-body">{{ topic.description }}</p>
       </div>
       {% endfor %}
     </div>
