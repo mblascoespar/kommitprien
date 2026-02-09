@@ -8,8 +8,16 @@ vendor/
 .claude/
 .idea/
 
+# macOS metadata files
+**/.DS_Store
+.DS_Store
+
 # Design source files (keep only web-optimized versions in assets/)
 design/**/*.ai
 design/**/*.eps
 design/**/*.pdf
-design/.DS_Store
+
+# Local documentation files (Claude-generated, for reference only)
+JEKYLL_MIGRATION.md
+REFACTORING_SUMMARY.md
+_data/events.yml
