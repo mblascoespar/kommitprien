@@ -5,12 +5,19 @@
    Edit these to change the entire site styling
    ============================================ */
 :root {
-  /* Brand Colors */
-  --color-primary: #253941;        /* Dark blue-gray - main brand color */
-  --color-accent: #ff0400;         /* Red - calls-to-action */
-  --color-accent-teal: #0F766E;    /* Teal - alternative accent */
-  --color-text: #666666;           /* Gray - body text */
+  /* Brand Colors - Official KomMit Palette */
+  --color-primary: #B8B5FF;        /* Light purple - main brand color */
+  --color-accent: #F9E693;         /* Light yellow - calls-to-action */
+  --color-accent-cyan: #89CEE1;    /* Light cyan - alternative accent */
+  --color-text: #626262;           /* Medium gray - body text */
   --color-background: #ffffff;     /* White - backgrounds */
+  --color-background-light: #EEEEEE; /* Very light gray - alternate backgrounds */
+  --color-dark: #000000;           /* Black - dark elements */
+
+  /* Additional Brand Colors */
+  --color-yellow-alt: #F3DF7F;     /* Alternative yellow */
+  --color-blue-purple: #8FA5F3;    /* Blue-purple accent */
+  --color-cyan-alt: #65C0D9;       /* Alternative cyan */
 
   /* Typography */
   --font-body: 'Noto Sans', sans-serif;
@@ -62,6 +69,10 @@ main {
   color: var(--color-text);
 }
 
+.text-dark {
+  color: var(--color-dark);
+}
+
 .text-muted {
   color: #999999;
 }
@@ -75,6 +86,45 @@ main {
   font-stretch: 62.5%;
 }
 
+/* Responsive logo sizing - mobile-first approach */
+.logo-image {
+  height: 40px;           /* Mobile: compact for small screens */
+  width: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+@media (min-width: 640px) {
+  .logo-image {
+    height: 50px;         /* Tablet: slightly larger */
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-image {
+    height: 56px;         /* Desktop: prominent brand presence */
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-image {
+    height: 64px;         /* Large desktop: maximum visibility */
+  }
+}
+
+/* Footer logo - slightly larger for visual hierarchy */
+.logo-image-footer {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .logo-image-footer {
+    height: 72px;         /* Larger footer logo on desktop */
+  }
+}
+
 /* ============================================
    BACKGROUND UTILITIES
    ============================================ */
@@ -86,8 +136,12 @@ main {
   background-color: var(--color-accent);
 }
 
-.bg-accent-teal {
-  background-color: var(--color-accent-teal);
+.bg-accent-cyan {
+  background-color: var(--color-accent-cyan);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
 }
 
 .bg-white {
@@ -95,15 +149,15 @@ main {
 }
 
 .bg-gray-light {
-  background-color: #f9fafb;
+  background-color: var(--color-background-light);
 }
 
 /* ============================================
    BUTTON STYLES
    ============================================ */
 .btn-primary {
-  background-color: var(--color-accent);
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-dark);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -114,20 +168,20 @@ main {
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
+  opacity: 0.85;
   transform: translateY(-2px);
 }
 
 .btn-primary-sm {
-  background-color: var(--color-accent);
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-dark);
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   transition: var(--transition);
 }
 
 .btn-primary-sm:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .btn-secondary {
@@ -140,21 +194,22 @@ main {
   transition: var(--transition);
   display: inline-flex;
   align-items: center;
+  background-color: transparent;
 }
 
 .btn-secondary:hover {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-dark);
 }
 
 /* Navigation Links */
 .nav-link {
-  color: var(--color-primary);
+  color: var(--color-dark);
   transition: var(--transition);
 }
 
 .nav-link:hover {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 /* ============================================
@@ -176,8 +231,12 @@ main {
   border-left: 4px solid var(--color-accent);
 }
 
-.card-accent-teal {
-  border-left: 4px solid var(--color-accent-teal);
+.card-accent-cyan {
+  border-left: 4px solid var(--color-accent-cyan);
+}
+
+.card-accent-yellow {
+  border-left: 4px solid var(--color-accent);
 }
 
 /* ============================================
@@ -188,7 +247,7 @@ main {
 }
 
 .section-title {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 1rem;
@@ -234,12 +293,16 @@ main {
   margin: 0 auto 1.5rem;
 }
 
-.icon-circle-teal {
-  background-color: var(--color-accent-teal);
+.icon-circle-cyan {
+  background-color: var(--color-accent-cyan);
 }
 
-.icon-circle-red {
+.icon-circle-yellow {
   background-color: var(--color-accent);
+}
+
+.icon-circle-primary {
+  background-color: var(--color-primary);
 }
 
 /* ============================================
