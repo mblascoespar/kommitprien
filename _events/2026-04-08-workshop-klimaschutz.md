@@ -3,6 +3,7 @@ title: "Workshop: Klimaschutz"
 date: 2026-04-08
 time: "10:00 Uhr"
 location: "Rathaus Prien"
+category: korso
 accent: yellow
 image: "event-klima.jpg"
 ---
