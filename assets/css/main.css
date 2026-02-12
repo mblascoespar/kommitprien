@@ -219,6 +219,7 @@ main {
   background-color: var(--color-background);
   border-radius: var(--card-radius);
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
