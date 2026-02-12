@@ -2,14 +2,16 @@
   <div class="container mx-auto px-4">
     <div class="text-center mb-16">
       <h2 class="section-title">{{ page.sections.about.title }}</h2>
-      <p class="section-description">
-        {{ page.sections.about.description }}
-      </p>
+      <div class="section-description">
+        {% for paragraph in page.sections.about.description %}
+        <p{% if forloop.last == false %} class="mb-4"{% endif %}>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
       {% for feature in site.data.features %}
-      <div class="card p-8">
+      <div class="card p-8 text-center">
         <div class="icon-circle icon-circle-{{ feature.color }}">
           <i data-lucide="{{ feature.icon }}" class="w-8 h-8 text-white"></i>
         </div>

@@ -24,3 +24,4 @@ design/**/*.pdf
 JEKYLL_MIGRATION.md
 REFACTORING_SUMMARY.md
 _data/events.yml
+/CLAUDE.md

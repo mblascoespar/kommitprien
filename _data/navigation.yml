@@ -1,8 +1,6 @@
 - name: Über uns
-  url: "#ueber-uns"
+  url: "/#ueber-uns"
 - name: Veranstaltungen
-  url: "#veranstaltungen"
-- name: Themen
-  url: "#themen"
-- name: Mitmachen
-  url: "#mitmachen"
+  url: "/veranstaltungen"
+- name: Wer wir sind
+  url: "/#wer-wir-sind"

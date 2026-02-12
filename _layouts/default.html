@@ -6,6 +6,9 @@
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/logo.svg' | relative_url }}">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -24,11 +27,7 @@
   {% include header.html %}
 
   <main>
-    {% include hero.html %}
-    {% include about.html %}
-    {% include events.html %}
-    {% include topics.html %}
-    {% include cta.html %}
+    {{ content }}
   </main>
 
   {% include footer.html %}

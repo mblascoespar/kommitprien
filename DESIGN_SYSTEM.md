@@ -23,12 +23,19 @@ Located at the top of `/assets/css/main.css`:
 
 ```css
 :root {
-  /* Brand Colors */
-  --color-primary: #253941;        /* Dark blue-gray - headers, nav */
-  --color-accent: #ff0400;         /* Red - CTAs, highlights */
-  --color-accent-teal: #0F766E;    /* Teal - alternative accent */
-  --color-text: #666666;           /* Gray - body text */
+  /* Brand Colors - Official KomMit Palette */
+  --color-primary: #B8B5FF;        /* Light purple - main brand color */
+  --color-accent: #F9E693;         /* Light yellow - calls-to-action */
+  --color-accent-cyan: #89CEE1;    /* Light cyan - alternative accent */
+  --color-text: #626262;           /* Medium gray - body text */
   --color-background: #ffffff;     /* White - backgrounds */
+  --color-background-light: #EEEEEE; /* Very light gray - alternate backgrounds */
+  --color-dark: #000000;           /* Black - dark elements */
+
+  /* Additional Brand Colors */
+  --color-yellow-alt: #F3DF7F;     /* Alternative yellow */
+  --color-blue-purple: #8FA5F3;    /* Blue-purple accent */
+  --color-cyan-alt: #65C0D9;       /* Alternative cyan */
 
   /* Typography */
   --font-body: 'Noto Sans', sans-serif;
@@ -54,9 +61,10 @@ Located at the top of `/assets/css/main.css`:
 
 | Class | Purpose | CSS |
 |-------|---------|-----|
-| `.text-primary` | Main brand color (dark blue) | `color: var(--color-primary)` |
-| `.text-accent` | Accent red | `color: var(--color-accent)` |
+| `.text-primary` | Main brand color (purple) | `color: var(--color-primary)` |
+| `.text-accent` | Accent yellow | `color: var(--color-accent)` |
 | `.text-body` | Body text gray | `color: var(--color-text)` |
+| `.text-dark` | Black text | `color: var(--color-dark)` |
 | `.text-muted` | Lighter gray (footer) | `color: #999999` |
 | `.font-black` | Heavy weight headings | `font-weight: 900` |
 | `.logo-condensed` | Condensed logo text | `font-stretch: 62.5%` |
@@ -65,15 +73,16 @@ Located at the top of `/assets/css/main.css`:
 
 | Class | Purpose |
 |-------|---------|
-| `.bg-primary` | Dark blue background |
-| `.bg-accent` | Red background |
-| `.bg-accent-teal` | Teal background |
+| `.bg-primary` | Light purple background |
+| `.bg-accent` | Light yellow background |
+| `.bg-accent-cyan` | Light cyan background |
+| `.bg-dark` | Black background |
 | `.bg-white` | White background |
-| `.bg-gray-light` | Light gray (#f9fafb) |
+| `.bg-gray-light` | Light gray (#EEEEEE) |
 
 ### Buttons
 
-**Primary Button** (Red CTA):
+**Primary Button** (Purple CTA):
 ```html
 <a href="#" class="btn-primary">
   Button Text
@@ -109,12 +118,12 @@ Located at the top of `/assets/css/main.css`:
 
 **Card with Accent Border**:
 ```html
-<div class="card card-accent-red">
-  <!-- Red left border -->
+<div class="card card-accent-yellow">
+  <!-- Yellow left border -->
 </div>
 
-<div class="card card-accent-teal">
-  <!-- Teal left border -->
+<div class="card card-accent-cyan">
+  <!-- Cyan left border -->
 </div>
 ```
 
@@ -122,7 +131,7 @@ Located at the top of `/assets/css/main.css`:
 ```html
 {% for event in site.data.events %}
   <div class="card card-accent-{{ event.accent }}">
-    <!-- Accent color from YAML: "red" or "teal" -->
+    <!-- Accent color from YAML: "yellow" or "cyan" -->
   </div>
 {% endfor %}
 ```
@@ -153,12 +162,16 @@ Located at the top of `/assets/css/main.css`:
 
 **Icon Circle** (for topic/feature cards):
 ```html
-<div class="icon-circle icon-circle-teal">
+<div class="icon-circle icon-circle-cyan">
   <i data-lucide="car" class="w-8 h-8 text-white"></i>
 </div>
 
-<div class="icon-circle icon-circle-red">
+<div class="icon-circle icon-circle-yellow">
   <i data-lucide="megaphone" class="w-8 h-8 text-white"></i>
+</div>
+
+<div class="icon-circle icon-circle-primary">
+  <i data-lucide="users" class="w-8 h-8 text-white"></i>
 </div>
 ```
 
@@ -216,30 +229,29 @@ Located at the top of `/assets/css/main.css`:
 
 ---
 
-## Logo Styling
+## Logo Implementation
 
-The KommMit logo uses a special condensed font:
+The KommMit logo uses SVG images from the official design assets:
 
+**Header Logo** (colored version):
 ```html
-<div class="text-2xl leading-none">
-  <span class="font-black italic text-primary logo-condensed">komm</span>
-  <span class="font-black italic text-accent logo-condensed">mit</span>
-</div>
-<div class="text-xs tracking-wider uppercase text-body font-medium">
-  Prien am Chiemsee
-</div>
+<a href="/" class="flex items-center logo-link">
+  <img src="{{ '/assets/images/logo.svg' | relative_url }}"
+       alt="KomMit Prien am Chiemsee"
+       class="logo-image">
+</a>
 ```
 
-**Footer variant** (white on dark):
+**Footer Logo** (white version for dark backgrounds):
 ```html
-<div class="text-2xl leading-none">
-  <span class="font-black italic text-white logo-condensed">komm</span>
-  <span class="font-black italic text-accent logo-condensed">mit</span>
-</div>
-<div class="text-xs tracking-wider uppercase text-muted font-medium">
-  Prien am Chiemsee
-</div>
+<img src="{{ '/assets/images/logo-white.svg' | relative_url }}"
+     alt="KomMit Prien am Chiemsee"
+     class="logo-image-footer">
 ```
+
+**Logo Size Classes:**
+- `.logo-image` - Header size (40px height)
+- `.logo-image-footer` - Footer size (48px height)
 
 ---
 
