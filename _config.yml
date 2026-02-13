@@ -31,4 +31,3 @@ exclude:
   - vendor/ruby/
   - .idea/
   - "*.iml"
-  - admin/
