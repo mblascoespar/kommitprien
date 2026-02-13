@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: mblascoespar/kommitprien
+  name: git-gateway
   branch: cms
-  base_url: https://dynamic-cactus-3f50ba.netlify.app
-  auth_endpoint: auth
 
 # Local development (optional - for testing without auth)
 local_backend: true

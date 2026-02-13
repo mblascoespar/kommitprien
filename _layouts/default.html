@@ -32,6 +32,9 @@
 
   {% include footer.html %}
 
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <!-- Mobile menu toggle script -->
   <script>
     // Mobile menu toggle
@@ -46,6 +49,17 @@
 
     // Initialize Lucide icons
     lucide.createIcons();
+
+    // Netlify Identity redirect handling
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
