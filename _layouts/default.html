@@ -50,8 +50,12 @@
     // Initialize Lucide icons
     lucide.createIcons();
 
-    // Netlify Identity redirect handling
+    // Netlify Identity initialization and redirect handling
     if (window.netlifyIdentity) {
+      window.netlifyIdentity.init({
+        APIUrl: "https://fancy-speculoos-2f1d90.netlify.app/.netlify/identity"
+      });
+
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
