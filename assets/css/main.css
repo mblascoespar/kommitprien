@@ -136,7 +136,7 @@ main {
 
 /* Responsive logo sizing - mobile-first approach */
 .logo-image {
-  height: 40px;           /* Mobile: compact for small screens */
+  height: 48px;           /* Mobile */
   width: auto;
   display: block;
   transition: var(--transition);
@@ -144,19 +144,19 @@ main {
 
 @media (min-width: 640px) {
   .logo-image {
-    height: 50px;         /* Tablet: slightly larger */
+    height: 56px;         /* Tablet */
   }
 }
 
 @media (min-width: 768px) {
   .logo-image {
-    height: 56px;         /* Desktop: prominent brand presence */
+    height: 64px;         /* Desktop */
   }
 }
 
 @media (min-width: 1024px) {
   .logo-image {
-    height: 64px;         /* Large desktop: maximum visibility */
+    height: 72px;         /* Large desktop */
   }
 }
 
@@ -384,4 +384,48 @@ main {
 
 .pointer-events-none {
   pointer-events: none;
+}
+
+/* ============================================
+   HERO DECORATIVE ELEMENTS
+   ============================================ */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.hero-blob-primary {
+  background-color: var(--color-primary);
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  right: 5%;
+}
+
+@media (max-width: 767px) {
+  .hero-blob-primary {
+    width: 250px;
+    height: 250px;
+    top: auto;
+    bottom: 10%;
+    right: -10%;
+  }
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-bounce 2s ease-in-out infinite;
+  opacity: 0.5;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
 }
