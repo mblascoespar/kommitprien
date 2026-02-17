@@ -330,12 +330,55 @@ Example:
 
 ---
 
+## Hosting & Deployment
+
+- **Host**: GitHub Pages (free, no bandwidth limits, no billing)
+- **Deploy**: GitHub Actions workflow (`.github/workflows/jekyll.yml`)
+- **Domain**: `www.kommit-prien.de` (CNAME in repo root, DNS via Strato)
+- **Deploy branch**: Currently `cms` (workflow triggers on `main` and `cms`)
+
+### How deployment works
+1. Push to `cms` (or `main`) triggers the GitHub Actions workflow
+2. Workflow installs Ruby, builds Jekyll, uploads artifact to GitHub Pages
+3. Site is live within ~1 minute
+
+### CMS Authentication Architecture
+
+Decap CMS requires a server-side OAuth proxy for GitHub — it cannot authenticate directly (PKCE only works with GitLab, not GitHub).
+
+```
+Browser (admin/) → client.html (PKCE client) → Google Apps Script (OAuth proxy) → GitHub OAuth → access token
+```
+
+**Components:**
+| File | Location | Purpose |
+|------|----------|---------|
+| `admin/config.yml` | Repo | Decap CMS config, points `auth_endpoint` to `client.html` |
+| `admin/client.html` | Repo | PKCE client — generates challenge, exchanges code for token |
+| `Code.gs` + `config.html` | Google Apps Script | OAuth proxy — holds Client Secret, talks to GitHub API |
+
+**Credentials:**
+- **GitHub OAuth App** (`Ov23lirj9rqxWJq8dx1Y`) — registered at github.com/settings/developers
+  - Callback URL points to the Google Apps Script web app URL
+- **Google Apps Script** — deployed as web app (free, 20k requests/day hard cap)
+  - `config.html` inside Apps Script holds: Client ID, Client Secret, PKCE endpoint
+  - Client Secret lives **only** in Apps Script, never in the repo
+
+**To recreate or debug the OAuth flow:**
+1. GitHub OAuth App: github.com/settings/developers → OAuth Apps
+2. Google Apps Script: script.google.com → project named "decap" (or similar)
+3. Reference implementation: github.com/nuzulul/decap-cms-google-apps-script
+
+---
+
 ## Resources
 
 - **Icons**: [Lucide Icons](https://lucide.dev/icons/)
 - **Tailwind Docs**: [tailwindcss.com](https://tailwindcss.com)
 - **Content Guide**: See `CONTENT_GUIDE.md`
 - **Design Assets**: See `design/` folder for logo files
+- **CMS OAuth Reference**: [github.com/nuzulul/decap-cms-google-apps-script](https://github.com/nuzulul/decap-cms-google-apps-script)
+- **Decap CMS Docs**: [decapcms.org/docs](https://decapcms.org/docs/)
 
 ---
 
@@ -346,5 +389,6 @@ This design system enables:
 - **Centralized styling** via CSS variables
 - **Consistent branding** across all components
 - **Easy maintenance** - change once, update everywhere
+- **Zero-cost infrastructure** — GitHub Pages + Google Apps Script (all free-tier, hard-capped)
 
 **Questions?** Reference this guide or check `/assets/css/main.css` for implementation details.
