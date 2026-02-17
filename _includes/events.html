@@ -36,7 +36,7 @@
         {% for event in treffpunkt_events %}
         <div class="card card-accent-{{ event.accent }}">
           <div class="relative h-48 bg-gray-200">
-            <img src="{{ '/assets/images/' | append: event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover">
+            <img src="{{ '/assets/images/events/' | append: event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold mb-4 text-primary">{{ event.title }}</h3>
@@ -89,7 +89,7 @@
         {% for event in korso_events %}
         <div class="card card-accent-{{ event.accent }}">
           <div class="relative h-48 bg-gray-200">
-            <img src="{{ '/assets/images/' | append: event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover">
+            <img src="{{ '/assets/images/events/' | append: event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold mb-4 text-primary">{{ event.title }}</h3>
@@ -142,7 +142,7 @@
         {% for event in gastevents %}
         <div class="card card-accent-{{ event.accent }}">
           <div class="relative h-48 bg-gray-200">
-            <img src="{{ '/assets/images/' | append: event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover">
+            <img src="{{ '/assets/images/events/' | append: event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold mb-4 text-primary">{{ event.title }}</h3>

@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: mblascoespar/kommitprien
+  branch: cms
+  base_url: https://www.kommit-prien.de
+  auth_endpoint: /admin/client.html
+
+# Media files
+media_folder: "assets/images/events"
+public_folder: "/assets/images/events"
+
+# German locale
+locale: 'de'
+
+# Collections
+collections:
+  - name: "events"
+    label: "Veranstaltungen"
+    label_singular: "Veranstaltung"
+    folder: "_events"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Titel", name: "title", widget: "string", required: true}
+      - {label: "Datum", name: "date", widget: "date", format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", required: true}
+      - {label: "Uhrzeit", name: "time", widget: "string", pattern: ['^[0-9]{2}:[0-9]{2} Uhr$', "Format: HH:MM Uhr"], hint: "Format: 19:00 Uhr", required: true}
+      - {label: "Ort", name: "location", widget: "string", required: true}
+      - {label: "Kategorie", name: "category", widget: "select", options: ["treffpunkt", "korso", "gastevents"], default: "treffpunkt", required: true}
+      - {label: "Akzentfarbe", name: "accent", widget: "select", options: ["yellow", "cyan"], default: "cyan", required: true}
+      - {label: "Bild", name: "image", widget: "image", required: false, hint: "Empfohlene Größe: 800x600px"}
+      - {label: "Beschreibung", name: "body", widget: "markdown", required: false, minimal: true}

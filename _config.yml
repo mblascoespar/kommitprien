@@ -3,7 +3,7 @@ title: "KommMit Prien"
 email: kontakt@kommmit-prien.de
 description: "Bürgerinitiative am Chiemsee"
 baseurl: ""
-url: ""
+url: "https://www.kommit-prien.de"
 
 # Build settings
 markdown: kramdown
