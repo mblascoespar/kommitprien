@@ -10,7 +10,7 @@
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
-      {% for feature in site.data.features %}
+      {% for feature in site.data.features.items %}
       <div class="card p-8 text-center">
         <div class="icon-circle icon-circle-{{ feature.color }}">
           <i data-lucide="{{ feature.icon }}" class="w-8 h-8 text-white"></i>

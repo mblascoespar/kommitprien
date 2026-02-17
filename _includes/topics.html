@@ -8,7 +8,7 @@
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {% for topic in site.data.topics %}
+      {% for topic in site.data.topics.items %}
       <div class="card p-8 text-center">
         <div class="icon-circle icon-circle-cyan">
           <i data-lucide="{{ topic.icon }}" class="w-8 h-8 text-white"></i>

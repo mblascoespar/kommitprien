@@ -1,12 +1,13 @@
-- icon: car
-  title: Verkehr & Mobilität
-  description: Nachhaltige Verkehrskonzepte und ÖPNV-Ausbau.
-- icon: building-2
-  title: Ortsentwicklung
-  description: Zukunftsfähige Planung und bezahlbarer Wohnraum.
-- icon: heart-handshake
-  title: Frauen in der Politik
-  description: Mehr Frauen für die Lokalpolitik begeistern.
-- icon: users
-  title: Bürgerbeteiligung
-  description: Mehr Mitsprache und Transparenz.
+items:
+  - icon: car
+    title: Verkehr & Mobilität
+    description: Nachhaltige Verkehrskonzepte und ÖPNV-Ausbau.
+  - icon: building-2
+    title: Ortsentwicklung
+    description: Zukunftsfähige Planung und bezahlbarer Wohnraum.
+  - icon: heart-handshake
+    title: Frauen in der Politik
+    description: Mehr Frauen für die Lokalpolitik begeistern.
+  - icon: users
+    title: Bürgerbeteiligung
+    description: Mehr Mitsprache und Transparenz.

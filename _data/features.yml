@@ -1,12 +1,13 @@
-- icon: message-circle
-  title: Gespräche
-  description: Uns interessieren regelmäßige, ehrliche und respektvolle Gespräche - von Angesicht zu Angesicht - und originelle Ideen für unseren Ort.
-  color: cyan
-- icon: users
-  title: Aktionen
-  description: Öffentliche Veranstaltungen zu Themen, die uns bewegen.
-  color: cyan
-- icon: eye
-  title: Blick über den eigenen Tellerrand
-  description: Wir laden Menschen aus anderen Kommunen ein, weil wir auch von unseren Nachbarn lernen können.
-  color: cyan
+items:
+  - icon: message-circle
+    title: Gespräche
+    description: Uns interessieren regelmäßige, ehrliche und respektvolle Gespräche - von Angesicht zu Angesicht - und originelle Ideen für unseren Ort.
+    color: cyan
+  - icon: users
+    title: Aktionen
+    description: Öffentliche Veranstaltungen zu Themen, die uns bewegen.
+    color: cyan
+  - icon: eye
+    title: Blick über den eigenen Tellerrand
+    description: Wir laden Menschen aus anderen Kommunen ein, weil wir auch von unseren Nachbarn lernen können.
+    color: cyan
