@@ -25,7 +25,7 @@ collections:
       preview: false
     fields:
       - {label: "Titel", name: "title", widget: "string", required: true}
-      - {label: "Datum", name: "date", widget: "date", format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", required: true}
+      - {label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", time_format: false, required: true}
       - {label: "Uhrzeit", name: "time", widget: "string", pattern: ['^[0-9]{2}:[0-9]{2} Uhr$', "Format: HH:MM Uhr"], hint: "Format: 19:00 Uhr", required: true}
       - {label: "Ort", name: "location", widget: "string", required: true}
       - {label: "Kategorie", name: "category", widget: "select", options: ["treffpunkt", "korso", "gastevents"], default: "treffpunkt", required: true}
