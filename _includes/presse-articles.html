@@ -12,8 +12,8 @@
       {% assign color_index = forloop.index0 | modulo: 2 %}
       <div class="card card-accent-{{ colors[color_index] }} flex flex-col">
         {% if article.image %}
-        <div class="relative h-48 bg-gray-200">
-          <img src="{{ article.image | relative_url }}" alt="{{ article.title }}" class="w-full h-full object-cover">
+        <div class="relative h-56 bg-white overflow-hidden">
+          <img src="{{ article.image | relative_url }}" alt="{{ article.title }}" class="w-full h-full object-contain p-2">
         </div>
         {% endif %}
         <div class="p-6 flex flex-col flex-grow">
