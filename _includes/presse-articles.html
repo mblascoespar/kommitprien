@@ -1,0 +1,45 @@
+<!-- Presseartikel Section -->
+<section class="section bg-gray-light">
+  <div class="container mx-auto px-4">
+    <h2 class="section-title text-center mb-12">{{ page.sections.articles.title }}</h2>
+
+    {% assign presse_sorted = site.presse | sort: "date" | reverse %}
+
+    {% assign colors = "cyan,yellow" | split: "," %}
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for article in presse_sorted %}
+      {% assign color_index = forloop.index0 | modulo: 2 %}
+      <div class="card card-accent-{{ colors[color_index] }} flex flex-col">
+        {% if article.image %}
+        <div class="relative h-48 bg-gray-200">
+          <img src="{{ article.image | relative_url }}" alt="{{ article.title }}" class="w-full h-full object-cover">
+        </div>
+        {% endif %}
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center text-sm text-body mb-2">
+            <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+            <span>{{ article.date | date: "%-d. %B %Y" }}</span>
+            <span class="mx-2">·</span>
+            <span class="font-semibold">{{ article.source }}</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-primary">{{ article.title }}</h3>
+          <p class="text-body mb-4">{{ article.description }}</p>
+          {% if article.journalist %}
+          <p class="text-sm text-body mb-4">
+            <i data-lucide="user" class="w-4 h-4 inline-block mr-1 align-text-bottom"></i>
+            {{ article.journalist }}
+          </p>
+          {% endif %}
+          <div class="mt-auto pt-2">
+            <a href="{{ article.link }}" target="_blank" rel="noopener noreferrer" class="btn-primary-sm inline-flex items-center">
+              Artikel lesen
+              <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

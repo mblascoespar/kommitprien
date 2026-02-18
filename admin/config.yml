@@ -69,6 +69,28 @@ collections:
                   - {label: "Titel", name: "title", widget: "string"}
                   - {label: "Beschreibung", name: "description", widget: "text"}
                   - {label: "Button-Text", name: "button_secondary", widget: "string"}
+      - name: "presse"
+        label: "Presse-Seite"
+        file: "presse.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Seitentitel", name: "title", widget: "string"}
+          - label: "Sektionen"
+            name: "sections"
+            widget: "object"
+            fields:
+              - label: "Intro"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - {label: "Titel", name: "title", widget: "string"}
+                  - {label: "Beschreibung", name: "description", widget: "text"}
+                  - {label: "Kontakt-E-Mail", name: "contact_email", widget: "string"}
+              - label: "Artikel-Bereich"
+                name: "articles"
+                widget: "object"
+                fields:
+                  - {label: "Titel", name: "title", widget: "string"}
 
   - name: "data"
     label: "Inhalte"
@@ -116,4 +138,24 @@ collections:
       - {label: "Kategorie", name: "category", widget: "select", options: ["treffpunkt", "korso", "gastevents"], default: "treffpunkt", required: true}
       - {label: "Akzentfarbe", name: "accent", widget: "select", options: ["yellow", "cyan"], default: "cyan", required: true}
       - {label: "Bild", name: "image", widget: "image", required: false, hint: "Empfohlene Größe: 800x600px"}
+      - {label: "Beschreibung", name: "body", widget: "markdown", required: false, minimal: true}
+
+  - name: "presse"
+    label: "Presseartikel"
+    label_singular: "Presseartikel"
+    folder: "_presse"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Titel", name: "title", widget: "string", required: true}
+      - {label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", time_format: false, required: true}
+      - {label: "Medium", name: "source", widget: "string", required: true, hint: "z.B. OVB, Rosenheim24, Bayernwelle"}
+      - {label: "Textbaustein", name: "description", widget: "text", required: true}
+      - {label: "Journalist", name: "journalist", widget: "string", required: false}
+      - {label: "Link zum Artikel", name: "link", widget: "string", required: true}
+      - {label: "PDF (intern)", name: "pdf", widget: "string", required: false, hint: "Nur für interne Nutzung, wird nicht öffentlich angezeigt"}
+      - {label: "Bild", name: "image", widget: "image", required: false}
       - {label: "Beschreibung", name: "body", widget: "markdown", required: false, minimal: true}

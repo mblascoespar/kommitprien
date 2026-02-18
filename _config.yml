@@ -16,6 +16,9 @@ collections:
   events:
     output: false
     sort_by: date
+  presse:
+    output: false
+    sort_by: date
 
 # Exclude from processing
 exclude:
