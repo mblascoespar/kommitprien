@@ -5,7 +5,7 @@ time: "10:00 Uhr"
 location: "Rathaus Prien"
 category: korso
 accent: yellow
-image: "event-klima.jpg"
+image: "/assets/images/event-klima.jpg"
 ---
 
 Erarbeitung konkreter Klimaschutzmaßnahmen für Prien.

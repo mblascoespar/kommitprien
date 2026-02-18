@@ -5,7 +5,7 @@ time: "18:30 Uhr"
 location: "Kulturzentrum Prien"
 category: treffpunkt
 accent: cyan
-image: "event-wohnraum.jpg"
+image: "/assets/images/event-wohnraum.jpg"
 ---
 
 Diskussion über bezahlbaren Wohnraum am Chiemsee.

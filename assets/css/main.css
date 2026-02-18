@@ -399,20 +399,10 @@ main {
 
 .hero-blob-primary {
   background-color: var(--color-primary);
-  width: 400px;
-  height: 400px;
-  top: 10%;
+  width: 500px;
+  height: 500px;
+  top: 15%;
   right: 5%;
-}
-
-@media (max-width: 767px) {
-  .hero-blob-primary {
-    width: 250px;
-    height: 250px;
-    top: auto;
-    bottom: 10%;
-    right: -10%;
-  }
 }
 
 /* Scroll indicator */

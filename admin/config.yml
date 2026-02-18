@@ -6,8 +6,8 @@ backend:
   auth_endpoint: /admin/client.html
 
 # Media files
-media_folder: "assets/images/events"
-public_folder: "/assets/images/events"
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 # German locale
 locale: 'de'

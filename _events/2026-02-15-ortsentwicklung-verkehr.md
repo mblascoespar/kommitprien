@@ -5,7 +5,7 @@ time: "19:00 Uhr"
 location: "Rathaus Prien"
 category: treffpunkt
 accent: yellow
-image: "event-verkehr.jpg"
+image: "/assets/images/event-verkehr.jpg"
 ---
 
 Expertenrunde zur nachhaltigen Verkehrsplanung in Prien.
