@@ -1,9 +1,9 @@
 <section id="warum-kommit" class="section bg-gray-light">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl md:text-5xl font-black text-center mb-12">{{ page.sections.warum.title }}</h2>
-    <div class="max-w-3xl mx-auto space-y-6">
+    <h2 class="section-title">{{ page.sections.warum.title }}</h2>
+    <div class="section-description">
       {% for reason in page.sections.warum.reasons %}
-      <p class="text-xl md:text-2xl text-center text-text">{{ reason }}</p>
+      <p{% if forloop.last == false %} class="mb-4"{% endif %}>{{ reason }}</p>
       {% endfor %}
     </div>
   </div>
