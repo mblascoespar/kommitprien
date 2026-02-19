@@ -141,17 +141,6 @@ collections:
               - {label: "Titel", name: "title", widget: "string"}
               - {label: "Beschreibung", name: "description", widget: "text"}
               - {label: "Farbe", name: "color", widget: "select", options: ["cyan", "yellow"], default: "cyan"}
-      - name: "topics"
-        label: "Themen (Wer wir sind Karten)"
-        file: "_data/topics.yml"
-        fields:
-          - label: "Themen"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: "Icon", name: "icon", widget: "string", hint: "Lucide Icon Name (z.B. car, building-2, heart-handshake, users)"}
-              - {label: "Titel", name: "title", widget: "string"}
-              - {label: "Beschreibung", name: "description", widget: "text"}
 
   - name: "events"
     label: "Veranstaltungen"
