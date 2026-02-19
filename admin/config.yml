@@ -69,6 +69,39 @@ collections:
                   - {label: "Titel", name: "title", widget: "string"}
                   - {label: "Beschreibung", name: "description", widget: "text"}
                   - {label: "Button-Text", name: "button_secondary", widget: "string"}
+      - name: "veranstaltungen"
+        label: "Veranstaltungen-Seite"
+        file: "veranstaltungen.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Seitentitel", name: "title", widget: "string"}
+          - label: "Sektionen"
+            name: "sections"
+            widget: "object"
+            fields:
+              - label: "Veranstaltungen"
+                name: "events"
+                widget: "object"
+                fields:
+                  - {label: "Titel", name: "title", widget: "string"}
+                  - label: "Intro"
+                    name: "intro"
+                    widget: "object"
+                    fields:
+                      - {label: "Titel", name: "title", widget: "string"}
+                      - {label: "Beschreibung", name: "description", widget: "text"}
+                  - label: "Kategorien"
+                    name: "categories"
+                    widget: "list"
+                    fields:
+                      - {label: "ID", name: "id", widget: "string"}
+                      - {label: "Titel", name: "title", widget: "string"}
+                  - label: "Platzhalter"
+                    name: "placeholder"
+                    widget: "object"
+                    fields:
+                      - {label: "Titel", name: "title", widget: "string"}
+                      - {label: "Bild", name: "image", widget: "string"}
       - name: "presse"
         label: "Presse-Seite"
         file: "presse.html"
