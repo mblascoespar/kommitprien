@@ -84,7 +84,6 @@ collections:
                 widget: "object"
                 fields:
                   - {label: "Titel", name: "title", widget: "string"}
-                  - {label: "Beschreibung", name: "description", widget: "text"}
                   - {label: "Kontakt-E-Mail", name: "contact_email", widget: "string"}
               - label: "Artikel-Bereich"
                 name: "articles"
