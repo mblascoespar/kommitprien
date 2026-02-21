@@ -29,7 +29,7 @@
   <div class="container mx-auto px-4">
     <h2 class="section-title text-center mb-12">Treffpunkt</h2>
 
-    {% assign treffpunkt_events = site.events | where: "category", "treffpunkt" | sort: "date" %}
+    {% assign treffpunkt_events = site.events | where: "category", "treffpunkt" | sort: "date" | reverse %}
 
     <div class="grid md:grid-cols-3 gap-8">
       {% if treffpunkt_events.size > 0 %}
@@ -78,7 +78,7 @@
   <div class="container mx-auto px-4">
     <h2 class="section-title text-center mb-12">Korso</h2>
 
-    {% assign korso_events = site.events | where: "category", "korso" | sort: "date" %}
+    {% assign korso_events = site.events | where: "category", "korso" | sort: "date" | reverse %}
 
     <div class="grid md:grid-cols-3 gap-8">
       {% if korso_events.size > 0 %}
@@ -127,7 +127,7 @@
   <div class="container mx-auto px-4">
     <h2 class="section-title text-center mb-12">Gastevents</h2>
 
-    {% assign gastevents = site.events | where: "category", "gastevents" | sort: "date" %}
+    {% assign gastevents = site.events | where: "category", "gastevents" | sort: "date" | reverse %}
 
     <div class="grid md:grid-cols-3 gap-8">
       {% if gastevents.size > 0 %}
