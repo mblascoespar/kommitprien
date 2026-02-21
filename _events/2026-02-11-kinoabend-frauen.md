@@ -6,5 +6,6 @@ location: "Mike's Kino"
 category: gastevents
 accent: yellow
 image: "/assets/images/gastevent-Kinoabend.jpeg"
+focal_point: center
 ---
 Bavaria ruft ... mehr Frauen in den Gemeinderat!

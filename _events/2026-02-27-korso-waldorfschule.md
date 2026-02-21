@@ -6,5 +6,6 @@ location: "Marktplatz"
 category: korso
 accent: cyan
 image: "/assets/images/korso-Waldorfschule.jpeg"
+focal_point: center
 ---
 Wir begleiten die Kinder durch den Ort zur Schule

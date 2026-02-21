@@ -6,5 +6,6 @@ location: "Marktplatz"
 category: korso
 accent: cyan
 image: "/assets/images/korso-Grundschule2.jpeg"
+focal_point: center
 ---
 Wir begleiten die Kinder durch den Ort zur Schule
