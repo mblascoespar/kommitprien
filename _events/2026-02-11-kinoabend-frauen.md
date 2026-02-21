@@ -5,7 +5,7 @@ time: 17:00 Uhr
 location: Mike's Kino
 category: gastevents
 accent: yellow
-image: /assets/images/gastevent-Kinoabend.jpeg
-focal_point: center
+image: /assets/images/gastevent-kinoabend.jpeg
+focal_point: null
 ---
 Bavaria ruft ... mehr Frauen in den Gemeinderat!
