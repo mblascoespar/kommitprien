@@ -6,6 +6,6 @@ location: Mike's Kino
 category: gastevents
 accent: yellow
 image: /assets/images/wem-gehoert-mein-dorf-plakat-600x849.jpg
-focal_point: top
+focal_point: center
 ---
 Wir zeigen "Wem gehört mein Dorf?"
