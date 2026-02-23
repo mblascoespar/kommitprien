@@ -34,7 +34,10 @@
     <div class="grid md:grid-cols-3 gap-8">
       {% if treffpunkt_events.size > 0 %}
         {% for event in treffpunkt_events %}
-        <div class="card card-accent-{{ event.accent }}">
+        <div class="card card-accent-{{ event.accent }} cursor-pointer" data-event>
+          <script type="application/json" class="event-data">
+            {"title":{{ event.title | jsonify }},"date":{{ event.date | date: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
+          </script>
           <div class="relative h-48 bg-gray-200">
             <img src="{{ event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover" style="object-position: {{ event.focal_point | default: 'center' }}">
           </div>
@@ -83,7 +86,10 @@
     <div class="grid md:grid-cols-3 gap-8">
       {% if korso_events.size > 0 %}
         {% for event in korso_events %}
-        <div class="card card-accent-{{ event.accent }}">
+        <div class="card card-accent-{{ event.accent }} cursor-pointer" data-event>
+          <script type="application/json" class="event-data">
+            {"title":{{ event.title | jsonify }},"date":{{ event.date | date: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
+          </script>
           <div class="relative h-48 bg-gray-200">
             <img src="{{ event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover" style="object-position: {{ event.focal_point | default: 'center' }}">
           </div>
@@ -132,7 +138,10 @@
     <div class="grid md:grid-cols-3 gap-8">
       {% if gastevents.size > 0 %}
         {% for event in gastevents %}
-        <div class="card card-accent-{{ event.accent }}">
+        <div class="card card-accent-{{ event.accent }} cursor-pointer" data-event>
+          <script type="application/json" class="event-data">
+            {"title":{{ event.title | jsonify }},"date":{{ event.date | date: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
+          </script>
           <div class="relative h-48 bg-gray-200">
             <img src="{{ event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover" style="object-position: {{ event.focal_point | default: 'center' }}">
           </div>
@@ -170,3 +179,64 @@
     </div>
   </div>
 </section>
+
+<!-- Event Detail Modal -->
+<dialog id="event-modal" class="event-dialog">
+  <button id="modal-close" class="btn-primary-sm" aria-label="Schließen" style="position:absolute;top:1rem;right:1rem;">
+    <i data-lucide="x" class="w-4 h-4"></i>
+  </button>
+  <img id="modal-image" class="w-full" style="height:14rem;object-fit:cover;" alt="">
+  <div style="padding:1.5rem">
+    <h2 id="modal-title" class="section-title" style="font-size:1.5rem;text-align:left;margin-bottom:1rem;"></h2>
+    <div class="text-muted" style="display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;font-size:0.875rem;">
+      <span id="modal-date"></span>
+      <span id="modal-time"></span>
+      <span id="modal-location"></span>
+    </div>
+    <p id="modal-description" class="text-body" style="font-style:italic;margin-bottom:1rem;"></p>
+    <div id="modal-details" class="prose"></div>
+  </div>
+</dialog>
+
+<script>
+(function() {
+  var modal = document.getElementById('event-modal');
+  var closeBtn = document.getElementById('modal-close');
+  var lucideInitialized = false;
+
+  document.querySelectorAll('[data-event]').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var dataEl = card.querySelector('.event-data');
+      if (!dataEl) return;
+      var data = JSON.parse(dataEl.textContent);
+
+      var imgEl = document.getElementById('modal-image');
+      if (data.image) {
+        imgEl.src = data.image;
+        imgEl.alt = data.title || '';
+        imgEl.style.display = '';
+      } else {
+        imgEl.style.display = 'none';
+      }
+
+      document.getElementById('modal-title').textContent = data.title || '';
+      document.getElementById('modal-date').textContent = data.date || '';
+      document.getElementById('modal-time').textContent = data.time || '';
+      document.getElementById('modal-location').textContent = data.location || '';
+      document.getElementById('modal-description').textContent = data.description || '';
+      document.getElementById('modal-details').innerHTML = (data.details || '').trim().replace(/\n/g, '<br>');
+
+      modal.showModal();
+
+      if (!lucideInitialized) {
+        lucide.createIcons();
+        lucideInitialized = true;
+      }
+    });
+  });
+
+  closeBtn.addEventListener('click', function() {
+    modal.close();
+  });
+})();
+</script>

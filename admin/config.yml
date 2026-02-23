@@ -161,6 +161,7 @@ collections:
       - {label: "Bild", name: "image", widget: "image", required: false, hint: "Empfohlene Größe: 800x600px"}
       - {label: "Bildausschnitt", name: "focal_point", widget: "select", options: [{label: "Oben", value: "top"}, {label: "Mitte", value: "center"}, {label: "Unten", value: "bottom"}], default: "center", required: false, hint: "Welcher Teil des Bildes soll angezeigt werden?"}
       - {label: "Beschreibung", name: "body", widget: "markdown", required: false, minimal: true}
+      - {label: "Genauere Info", name: "details", widget: "text", required: false, hint: "Längerer Beschreibungstext für den Detailbereich"}
 
   - name: "presse"
     label: "Presseartikel"
