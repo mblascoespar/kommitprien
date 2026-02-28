@@ -12,18 +12,16 @@ Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren 
 
 ### Datenerfassung auf dieser Website
 
-**Wer ist verantwortlich für die Datenerfassung auf dieser Website?**<br>
-Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber:
+**Wer ist verantwortlich für die Datenerfassung auf dieser Website?**
 
-KomMit Prien<br>
-Bürgerinitiative<br>
-Prien am Chiemsee<br>
-E-Mail: [info@kommit-prien.de](mailto:info@kommit-prien.de)
+Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber: **KomMit Prien**, Bürgerinitiative, Prien am Chiemsee, E-Mail: [info@kommit-prien.de](mailto:info@kommit-prien.de)
 
-**Wie erfassen wir Ihre Daten?**<br>
+**Wie erfassen wir Ihre Daten?**
+
 Diese Website setzt keine Cookies, verwendet keine Analysetools und bietet keine Formulare oder Registrierungsmöglichkeiten an. Daten werden ausschließlich technisch bedingt durch den Hosting-Anbieter erfasst (siehe Abschnitt „Hosting").
 
-**Wofür nutzen wir Ihre Daten?**<br>
+**Wofür nutzen wir Ihre Daten?**
+
 Die technisch erfassten Daten werden ausschließlich zur fehlerfreien Bereitstellung der Website genutzt. Eine Auswertung zu Marketingzwecken findet nicht statt.
 
 ## 2. Hosting
@@ -46,12 +44,7 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 
 ### Hinweis zur verantwortlichen Stelle
 
-Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
-
-KomMit Prien<br>
-Bürgerinitiative<br>
-Prien am Chiemsee<br>
-E-Mail: [info@kommit-prien.de](mailto:info@kommit-prien.de)
+Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: **KomMit Prien**, Bürgerinitiative, Prien am Chiemsee, E-Mail: [info@kommit-prien.de](mailto:info@kommit-prien.de)
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
 
@@ -80,10 +73,7 @@ Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: [info@kommit-pri
 
 Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt, haben Sie das Recht, sich bei einer Aufsichtsbehörde zu beschweren. Die für Bayern zuständige Aufsichtsbehörde ist:
 
-Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)<br>
-Promenade 18<br>
-91522 Ansbach<br>
-[www.lda.bayern.de](https://www.lda.bayern.de)
+Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach — [www.lda.bayern.de](https://www.lda.bayern.de)
 
 ## 5. SSL- bzw. TLS-Verschlüsselung
 
@@ -93,4 +83,4 @@ Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.
 
 Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben einschließlich der von Ihnen angegebenen E-Mail-Adresse zum Zwecke der Bearbeitung Ihrer Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen).
 
-<p class="text-sm text-muted mt-12">Stand: Februar 2026</p>
+Stand: Februar 2026
