@@ -102,6 +102,22 @@ collections:
                     fields:
                       - {label: "Titel", name: "title", widget: "string"}
                       - {label: "Bild", name: "image", widget: "string"}
+      - name: "impressum"
+        label: "Impressum"
+        file: "impressum.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "legal"}
+          - {label: "Seitentitel", name: "title", widget: "hidden", default: "Impressum - KommMit Prien"}
+          - {label: "Seitenüberschrift", name: "heading", widget: "hidden", default: "Impressum"}
+          - {label: "Inhalt", name: "body", widget: "markdown"}
+      - name: "datenschutz"
+        label: "Datenschutzerklärung"
+        file: "datenschutz.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "legal"}
+          - {label: "Seitentitel", name: "title", widget: "hidden", default: "Datenschutz - KommMit Prien"}
+          - {label: "Seitenüberschrift", name: "heading", widget: "hidden", default: "Datenschutzerklärung"}
+          - {label: "Inhalt", name: "body", widget: "markdown"}
       - name: "presse"
         label: "Presse-Seite"
         file: "presse.html"

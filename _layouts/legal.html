@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="container mx-auto px-4 pt-32 pb-24">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl md:text-5xl font-black text-primary mb-8">{{ page.heading }}</h1>
+
+    <div class="prose max-w-none">
+      {{ content }}
+    </div>
+
+    <div class="mt-12">
+      <a href="/" class="inline-flex items-center text-accent font-semibold hover:opacity-80">
+        <i data-lucide="arrow-left" class="mr-2 w-5 h-5"></i>
+        Zurück zur Startseite
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  lucide.createIcons();
+</script>
