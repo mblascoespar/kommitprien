@@ -3,14 +3,13 @@ layout: legal
 title: Impressum - KommMit Prien
 heading: Impressum
 ---
-
 ## Angaben gemäß § 5 DDG
 
 **KomMit Prien**, Bürgerinitiative, Prien am Chiemsee, Deutschland
 
 Moritz Zyrewitz, Heubergstraße 33, 83209 Prien
 
-Lisa Schurr, Kranzhornstraße 12, 83209 Prien am Chiemsee
+Lisa Schurr, Heubergstraße 33, 83209 Prien am Chiemsee
 
 ## Kontakt
 
@@ -18,9 +17,9 @@ E-Mail: [info@kommit-prien.de](mailto:info@kommit-prien.de)
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-Moritz Zyrewitz, Heubergstraße 33, 83209 Prien
+Moritz Zyrewitz, Heubergstraße 33, 83209 Prien am Chiemsee
 
-Lisa Schurr, Kranzhornstraße 12, 83209 Prien am Chiemsee
+Lisa Schurr, Heubergstraße 33, 83209 Prien am Chiemsee
 
 ## Haftungsausschluss
 
