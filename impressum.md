@@ -7,9 +7,9 @@ heading: Impressum
 
 **KomMit Prien**, Bürgerinitiative, Prien am Chiemsee, Deutschland
 
-Moritz Zyrewitz, Heubergstraße 33, 83209 Prien
+Moritz Zyrewitz, Bachstraße 17, 83209 Prien am Chiemsee
 
-Lisa Schurr, Heubergstraße 33, 83209 Prien am Chiemsee
+Lisa Schurr, Bachstraße 17, 83209 Prien am Chiemsee
 
 ## Kontakt
 
@@ -17,9 +17,9 @@ E-Mail: [info@kommit-prien.de](mailto:info@kommit-prien.de)
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-Moritz Zyrewitz, Heubergstraße 33, 83209 Prien am Chiemsee
+Moritz Zyrewitz, Bachstraße 17, 83209 Prien am Chiemsee
 
-Lisa Schurr, Heubergstraße 33, 83209 Prien am Chiemsee
+Lisa Schurr, Bachstraße 17, 83209 Prien am Chiemsee
 
 ## Haftungsausschluss
 
