@@ -10,9 +10,9 @@ focal_point: center
 details: |-
   Am 6. Mai wählt der neue Gemeinderat den 2. und 3. Bürgermeister. 
 
-  Wie werden Entscheidungen in Prien getroffen?
-  Wird der Wählerwille respektiert?
-  Bekommen Frauen echte Chancen auf Führungsrollen?
+  - Wie werden Entscheidungen in Prien getroffen?
+  - Wird der Wählerwille respektiert?
+  - Bekommen Frauen echte Chancen auf Führungsrollen?
 
   Deine Anwesenheit zählt - Öffentlichkeit macht einen Unterschied!
 ---
