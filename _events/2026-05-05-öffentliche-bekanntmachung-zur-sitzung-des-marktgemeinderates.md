@@ -2,7 +2,7 @@
 title: Öffentliche Bekanntmachung zur Sitzung des Marktgemeinderates
 date: 2026-05-06
 time: 17:30 Uhr
-location: Großen Sitzungssaal des Rathauses
+location: Großen Sitzungssaal des Rathauses Prien
 category: treffpunkt
 accent: cyan
 image: /assets/images/bekanntmachung.jpeg
