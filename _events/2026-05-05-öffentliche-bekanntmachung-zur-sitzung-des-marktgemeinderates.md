@@ -7,5 +7,7 @@ category: treffpunkt
 accent: cyan
 image: /assets/images/bekanntmachung.jpeg
 focal_point: center
+details: Um Anmeldung wird gebeten, da das Platzangebot beschränkt
+  ist: Vorzimmer@prien.de
 ---
 **Um Anmeldung wird gebeten, da das Platzangebot beschränkt ist:** [Vorzimmer@prien.de ](mailto:%20Vorzimmer@prien.de)
