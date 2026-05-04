@@ -5,16 +5,23 @@ time: 17:30 Uhr
 location: Rathaus Prien
 category: treffpunkt
 accent: cyan
-image: /assets/images/fahrrad-korso-27.2-v2-mz.png
+image: /assets/images/bekanntmachung.jpeg
 focal_point: center
-details: |-
+details: >-
   Am 6. Mai wählt der neue Gemeinderat den 2. und 3. Bürgermeister. 
 
+
   - Wie werden Entscheidungen in Prien getroffen?
+
   - Wird der Wählerwille respektiert?
+
   - Bekommen Frauen echte Chancen auf Führungsrollen?
 
+
   Deine Anwesenheit zählt - Öffentlichkeit macht einen Unterschied!
+
+
+  WICHTIG: Um Anmeldung wird gebeten, da das Platzangebot beschränkt ist: Vorzimmer@prien.de
 ---
 Am **6. Mai** wählt der neue Gemeinderat den **2. und 3. Bürgermeister.** 
 
@@ -23,3 +30,5 @@ Am **6. Mai** wählt der neue Gemeinderat den **2. und 3. Bürgermeister.**
 * Bekommen Frauen echte Chancen auf Führungsrollen?
 
 Deine Anwesenheit zählt - Öffentlichkeit macht einen Unterschied!
+
+**WICHTIG: Um Anmeldung wird gebeten, da das Platzangebot beschränkt ist:** [Vorzimmer@prien.de ](mailto:%20Vorzimmer@prien.de)
