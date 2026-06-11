@@ -5,7 +5,7 @@ time: 16:30 Uhr
 location: Wendelsteinplatz
 category: treffpunkt
 accent: cyan
-image: /assets/images/signal-2026-06-08-134738.png
+image: /assets/images/aktiv-baukultur.png
 focal_point: center
 details: ""
 ---
