@@ -1,6 +1,6 @@
 ---
 title: Bundesweite Aktion „Lange Tafel der Baukultur“
-date: 1906-06-19
+date: 2026-06-19
 time: 16:30 Uhr
 location: Wendelsteinplatz
 category: treffpunkt
