@@ -36,7 +36,7 @@
         {% for event in treffpunkt_events %}
         <div class="card card-accent-{{ event.accent }} cursor-pointer" data-event>
           <script type="application/json" class="event-data">
-            {"title":{{ event.title | jsonify }},"date":{{ event.date | date: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
+            {"title":{{ event.title | jsonify }},"date":{{ event.date | localize: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
           </script>
           <div class="relative h-48 bg-gray-200">
             <img src="{{ event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover" style="object-position: {{ event.focal_point | default: 'center' }}">
@@ -46,7 +46,7 @@
             <div class="space-y-2 mb-4 text-body">
               <div class="flex items-center">
                 <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                <span>{{ event.date | date: "%-d. %B %Y" }}</span>
+                <span>{{ event.date | localize: "%-d. %B %Y" }}</span>
               </div>
               <div class="flex items-center">
                 <i data-lucide="clock" class="w-4 h-4 mr-2"></i>
@@ -88,7 +88,7 @@
         {% for event in korso_events %}
         <div class="card card-accent-{{ event.accent }} cursor-pointer" data-event>
           <script type="application/json" class="event-data">
-            {"title":{{ event.title | jsonify }},"date":{{ event.date | date: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
+            {"title":{{ event.title | jsonify }},"date":{{ event.date | localize: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
           </script>
           <div class="relative h-48 bg-gray-200">
             <img src="{{ event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover" style="object-position: {{ event.focal_point | default: 'center' }}">
@@ -98,7 +98,7 @@
             <div class="space-y-2 mb-4 text-body">
               <div class="flex items-center">
                 <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                <span>{{ event.date | date: "%-d. %B %Y" }}</span>
+                <span>{{ event.date | localize: "%-d. %B %Y" }}</span>
               </div>
               <div class="flex items-center">
                 <i data-lucide="clock" class="w-4 h-4 mr-2"></i>
@@ -140,7 +140,7 @@
         {% for event in gastevents %}
         <div class="card card-accent-{{ event.accent }} cursor-pointer" data-event>
           <script type="application/json" class="event-data">
-            {"title":{{ event.title | jsonify }},"date":{{ event.date | date: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
+            {"title":{{ event.title | jsonify }},"date":{{ event.date | localize: "%-d. %B %Y" | jsonify }},"time":{{ event.time | jsonify }},"location":{{ event.location | jsonify }},"image":{{ event.image | jsonify }},"description":{{ event.content | strip_html | strip | jsonify }},"details":{{ event.details | jsonify }},"accent":{{ event.accent | jsonify }}}
           </script>
           <div class="relative h-48 bg-gray-200">
             <img src="{{ event.image | relative_url }}" alt="{{ event.title }}" class="w-full h-full object-cover" style="object-position: {{ event.focal_point | default: 'center' }}">
@@ -150,7 +150,7 @@
             <div class="space-y-2 mb-4 text-body">
               <div class="flex items-center">
                 <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                <span>{{ event.date | date: "%-d. %B %Y" }}</span>
+                <span>{{ event.date | localize: "%-d. %B %Y" }}</span>
               </div>
               <div class="flex items-center">
                 <i data-lucide="clock" class="w-4 h-4 mr-2"></i>
