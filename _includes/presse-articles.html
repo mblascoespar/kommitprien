@@ -19,7 +19,7 @@
         <div class="p-6 flex flex-col flex-grow">
           <div class="flex items-center text-sm text-body mb-2">
             <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-            <span>{{ article.date | german_date: "%-d. %B %Y" }}</span>
+            <span>{{ article.date | localize: "%-d. %B %Y" }}</span>
             <span class="mx-2">·</span>
             <span class="font-semibold">{{ article.source }}</span>
           </div>
