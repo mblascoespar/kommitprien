@@ -171,6 +171,7 @@ collections:
       - {label: "Titel", name: "title", widget: "string", required: true}
       - {label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", time_format: false, required: true}
       - {label: "Uhrzeit", name: "time", widget: "string", pattern: ['^[0-9]{2}:[0-9]{2} Uhr$', "Format: HH:MM Uhr"], hint: "Format: 19:00 Uhr", required: true}
+      - {label: "Endzeit", name: "time_end", widget: "string", pattern: ['^[0-9]{2}:[0-9]{2} Uhr$', "Format: HH:MM Uhr"], hint: "Optional, Format: 21:00 Uhr", required: false}
       - {label: "Ort", name: "location", widget: "string", required: true}
       - {label: "Kategorie", name: "category", widget: "select", options: ["treffpunkt", "korso", "gastevents"], default: "treffpunkt", required: true}
       - {label: "Akzentfarbe", name: "accent", widget: "select", options: ["yellow", "cyan"], default: "cyan", required: true}
