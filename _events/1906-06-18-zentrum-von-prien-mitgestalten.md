@@ -2,6 +2,7 @@
 title: Zentrum von Prien mitgestalten
 date: 2026-06-19
 time: 16:30 Uhr
+time_end: 19:30 Uhr
 location: Wendelsteinplatz
 category: treffpunkt
 accent: cyan
