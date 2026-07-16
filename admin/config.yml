@@ -34,6 +34,7 @@ collections:
               - {label: "Beschreibung", name: "description", widget: "text"}
               - {label: "Button Veranstaltungen", name: "cta_primary", widget: "string"}
               - {label: "Button Mehr erfahren", name: "cta_secondary", widget: "string"}
+              - {label: "Bild", name: "image", widget: "image", required: false, hint: "Wird rechts neben dem Text angezeigt"}
           - label: "Sektionen"
             name: "sections"
             widget: "object"
@@ -44,6 +45,7 @@ collections:
                 fields:
                   - {label: "Titel", name: "title", widget: "string"}
                   - {label: "Beschreibung", name: "description", widget: "text"}
+                  - {label: "Bild", name: "image", widget: "image", required: false, hint: "Optional, wird neben dem Text angezeigt"}
               - label: "Über KomMit"
                 name: "about"
                 widget: "object"

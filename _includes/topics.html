@@ -1,10 +1,24 @@
 <section id="wer-wir-sind" class="section bg-white">
   <div class="container mx-auto px-4">
+    {% if page.sections.topics.image %}
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div>
+        <h2 class="section-title text-left">{{ page.sections.topics.title }}</h2>
+        <p class="section-description text-left">
+          {{ page.sections.topics.description }}
+        </p>
+      </div>
+      <div>
+        <img src="{{ page.sections.topics.image | relative_url }}" alt="{{ page.sections.topics.title }}" class="rounded-2xl shadow-lg w-full max-h-[400px] object-cover">
+      </div>
+    </div>
+    {% else %}
     <div class="text-center">
       <h2 class="section-title">{{ page.sections.topics.title }}</h2>
       <p class="section-description">
         {{ page.sections.topics.description }}
       </p>
     </div>
+    {% endif %}
   </div>
 </section>
